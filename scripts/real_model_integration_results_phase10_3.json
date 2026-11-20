@@ -1,0 +1,330 @@
+[
+  {
+    "test_id": "test_1_supported_syllabus",
+    "test_name": "Supported Syllabus Question",
+    "query": "What are the prerequisites and credit count for CSE205?",
+    "expected_state": "sufficient",
+    "actual_state": "insufficient",
+    "model_identifier": "deterministic_abstention_engine",
+    "answer": "The available university documents do not sufficiently support an answer to this question. The requested topic is either outside the indexed official documents or lacks necessary operational detail. Please consult the relevant university department, official portal, or examination board directly.",
+    "citation_validation_status": "bypassed",
+    "valid_citations_count": 0,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [],
+    "source_metadata": [],
+    "missing_information": [
+      "Full topic coverage is absent from academic documents."
+    ],
+    "conflict_details": null,
+    "latency": {
+      "retrieval_ms": 119.21,
+      "rerank_ms": 675.54,
+      "generation_ms": 0.0,
+      "total_ms": 794.97,
+      "wall_time_s": 0.795
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 10.79,
+        "avail_gb": 4.92,
+        "load_pct": 68
+      },
+      "process_ram_mb": {
+        "working_set_mb": 415.33,
+        "private_mb": 1019.37
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 0.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "test_id": "test_2_supported_regulation",
+    "test_name": "Supported Regulation Question",
+    "query": "What is the minimum attendance required and what happens if attendance falls below 75%?",
+    "expected_state": "sufficient",
+    "actual_state": "conflicting",
+    "model_identifier": "deterministic_conflict_engine",
+    "answer": "A direct policy contradiction was detected across official documents (LPU_CSE_Academic_Regulations.docx). Evaluation details: Contradictory or incompatible claims exist between relevant sources and cannot safely be reconciled.. Because conflicting institutional policies cannot be automatically resolved by an AI assistant, please verify the effective policy version with the Academic Dean or Registrar's Office.",
+    "citation_validation_status": "bypassed",
+    "valid_citations_count": 0,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [],
+    "source_metadata": [],
+    "missing_information": null,
+    "conflict_details": {
+      "conflict_type": "regulatory_incompatibility",
+      "competing_claims": [
+        "LPU CSE Academic Regulations (Section 1) specifies an 80% aggregate attendance requirement (75% with relaxation).",
+        "Student FAQ dataset (FAQ013) notes the operational examination debarment rule is unverified and cautions against unverified percentages (e.g. 75%)."
+      ],
+      "affected_chunk_ids": [
+        "448a532e04fa2302",
+        "dce911ea5392858b",
+        "0b702e4b192a5ab0"
+      ],
+      "affected_sources": [
+        "LPU_CSE_Academic_Regulations.docx"
+      ]
+    },
+    "latency": {
+      "retrieval_ms": 93.01,
+      "rerank_ms": 527.06,
+      "generation_ms": 0.0,
+      "total_ms": 620.14,
+      "wall_time_s": 0.62
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 10.85,
+        "avail_gb": 4.87,
+        "load_pct": 69
+      },
+      "process_ram_mb": {
+        "working_set_mb": 473.91,
+        "private_mb": 1085.58
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 0.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "test_id": "test_3_partial_missing_detail",
+    "test_name": "Partially Supported Multi-Aspect Question",
+    "query": "What are the grading components for CSE306 and what is the minimum required score in the End-Term examination alone?",
+    "expected_state": "partial",
+    "actual_state": "insufficient",
+    "model_identifier": "deterministic_abstention_engine",
+    "answer": "The available university documents do not sufficiently support an answer to this question. The requested topic is either outside the indexed official documents or lacks necessary operational detail. Please consult the relevant university department, official portal, or examination board directly.",
+    "citation_validation_status": "bypassed",
+    "valid_citations_count": 0,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [],
+    "source_metadata": [],
+    "missing_information": [
+      "Full topic coverage is absent from academic documents."
+    ],
+    "conflict_details": null,
+    "latency": {
+      "retrieval_ms": 59.58,
+      "rerank_ms": 337.61,
+      "generation_ms": 0.0,
+      "total_ms": 397.42,
+      "wall_time_s": 0.397
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 10.87,
+        "avail_gb": 4.85,
+        "load_pct": 69
+      },
+      "process_ram_mb": {
+        "working_set_mb": 474.05,
+        "private_mb": 1085.59
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 0.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "test_id": "test_4_multiaspect_question",
+    "test_name": "Multi-Aspect Question",
+    "query": "What are the attendance debarment thresholds and within how many days must medical regularization be submitted?",
+    "expected_state": "sufficient",
+    "actual_state": "partial",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "answer": "The attendance debarment thresholds and the number of days within which medical regularization must be submitted are not available in the provided documents.  \n\nWhile the LPU Prospectus 2025 states that students should attend at least 80% of delivered classes in aggregate, with a 5 percentage-point relaxation for medical reasons and other genuine exigencies, resulting in a mandatory 75% aggregate attendance, this does not specify debarment thresholds or deadlines for medical regularization [[cite:448a532e04fa2302]].  \n\nMoreover, no document in the context outlines the timeframe for submitting medical regularization or any debarment thresholds.  \n\nTherefore, information regarding attendance debarment thresholds and the number of days for medical regularization submission is not available in the provided sources. [[cite:dce911ea5392858b]]",
+    "citation_validation_status": "valid",
+    "valid_citations_count": 2,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [
+      {
+        "chunk_id": "448a532e04fa2302",
+        "document_id": "c745b4365de6d630",
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "category": "regulations",
+        "course_code": null,
+        "title": "LPU CSE Academic Regulations"
+      },
+      {
+        "chunk_id": "dce911ea5392858b",
+        "document_id": "cfff181c9df019ea",
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "category": "regulations",
+        "course_code": null,
+        "title": "LPU CSE Academic Regulations"
+      }
+    ],
+    "source_metadata": [
+      {
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "authority_level": "departmental_academic_regulations",
+        "document_origin": "internal_department_guideline",
+        "institutional_authenticity": "partially_verified",
+        "verification_status": "operational_rules_unverified"
+      }
+    ],
+    "missing_information": [
+      "Official operational rules/formulas are explicitly flagged as incomplete in public documents."
+    ],
+    "conflict_details": null,
+    "latency": {
+      "retrieval_ms": 91.57,
+      "rerank_ms": 518.92,
+      "generation_ms": 8408.11,
+      "total_ms": 9018.9,
+      "wall_time_s": 9.019
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 11.52,
+        "avail_gb": 4.2,
+        "load_pct": 73
+      },
+      "process_ram_mb": {
+        "working_set_mb": 478.28,
+        "private_mb": 1085.91
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3137.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "test_id": "test_5_citation_correctness",
+    "test_name": "Citation Correctness Test",
+    "query": "What is the course objective and prerequisite for CSE202 Object Oriented Programming?",
+    "expected_state": "sufficient",
+    "actual_state": "sufficient",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "answer": "The provided context does not specify the course objective or prerequisite for CSE202 Object Oriented Programming. Therefore, based on the given information, no factual claim about the course objective or prerequisite can be made. [[cite:695bb51bc95d23ba]] [[cite:8ad84b89037231bb]] [[cite:0e8460c617cce338]] [[cite:be775cdccf11f750]]",
+    "citation_validation_status": "valid",
+    "valid_citations_count": 4,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [
+      {
+        "chunk_id": "695bb51bc95d23ba",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "8ad84b89037231bb",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "0e8460c617cce338",
+        "document_id": "bdd1897dea6d202c",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "be775cdccf11f750",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      }
+    ],
+    "source_metadata": [
+      {
+        "source_file": "CSE202.pdf",
+        "authority_level": "curriculum_syllabus",
+        "document_origin": "department_course_outline",
+        "institutional_authenticity": "unverified_official_seal",
+        "verification_status": "verified_syllabus_structure"
+      }
+    ],
+    "missing_information": null,
+    "conflict_details": null,
+    "latency": {
+      "retrieval_ms": 74.8,
+      "rerank_ms": 423.84,
+      "generation_ms": 2687.94,
+      "total_ms": 3186.85,
+      "wall_time_s": 3.187
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 11.66,
+        "avail_gb": 4.05,
+        "load_pct": 74
+      },
+      "process_ram_mb": {
+        "working_set_mb": 479.23,
+        "private_mb": 1086.83
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3137.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "test_id": "test_6_unsupported_abstention",
+    "test_name": "Unsupported Question (Deterministic Abstention)",
+    "query": "What is the fee refund percentage if a student withdraws their admission in the 4th week of classes?",
+    "expected_state": "insufficient",
+    "actual_state": "insufficient",
+    "model_identifier": "deterministic_abstention_engine",
+    "answer": "The available university documents do not sufficiently support an answer to this question. The requested topic is either outside the indexed official documents or lacks necessary operational detail. Please consult the relevant university department, official portal, or examination board directly.",
+    "citation_validation_status": "bypassed",
+    "valid_citations_count": 0,
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "citations": [],
+    "source_metadata": [],
+    "missing_information": [
+      "Full topic coverage is absent from academic documents."
+    ],
+    "conflict_details": null,
+    "latency": {
+      "retrieval_ms": 83.7,
+      "rerank_ms": 474.3,
+      "generation_ms": 0.0,
+      "total_ms": 558.19,
+      "wall_time_s": 0.558
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 11.67,
+        "avail_gb": 4.04,
+        "load_pct": 74
+      },
+      "process_ram_mb": {
+        "working_set_mb": 479.74,
+        "private_mb": 1087.45
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3137.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  }
+]

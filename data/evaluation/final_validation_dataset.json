@@ -1,0 +1,502 @@
+[
+  {
+    "query_id": "F01",
+    "query": "Can you tell me the author and title of the prescribed book for discrete math MTH401?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["MTH401.pdf"],
+    "supported_aspects": ["Prescribed textbooks and authors for MTH401 (Kenneth H. Rosen, Discrete Mathematics and Its Applications)"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in MTH401 syllabus chunk 869b736b4859a101 on page 1."
+  },
+  {
+    "query_id": "F02",
+    "query": "What is covered in Unit 3 of Computer Networks CSE306?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE306.pdf"],
+    "supported_aspects": ["Unit 3 topics: Network layer, IPv4 addressing, subnetting, CIDR, routing algorithms"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE306 syllabus chunk 45e43a99264fa580."
+  },
+  {
+    "query_id": "F03",
+    "query": "What are the course outcomes of PEL132 regarding technical writing and workplace communication?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["PEL132.pdf"],
+    "supported_aspects": ["PEL132 Course Outcomes CO3 and CO4 covering technical writing, report drafting, and workplace communication"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in PEL132 syllabus chunk a0081e59fa62eac6 on page 1."
+  },
+  {
+    "query_id": "F04",
+    "query": "Which unit in CSE276 Artificial Intelligence covers minimax search and game playing?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE276.pdf"],
+    "supported_aspects": ["Adversarial search, Minimax algorithm, alpha-beta pruning in Unit III"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE276 syllabus chunk 2bc778c86aa5ae43."
+  },
+  {
+    "query_id": "F05",
+    "query": "What are the lecture, tutorial, practical and credit hours for Object Oriented Programming CSE202?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE202.pdf"],
+    "supported_aspects": ["L-T-P-Credits distribution for CSE202 (L: 3, T: 0, P: 2, Credits: 4)"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE202 syllabus chunk 695bb51bc95d23ba on page 1."
+  },
+  {
+    "query_id": "F06",
+    "query": "Does the Design Thinking course INT335 include empathy mapping and user persona creation?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["INT335.pdf"],
+    "supported_aspects": ["Empathy mapping, user research, user personas, extreme users in Unit II"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in INT335 syllabus chunk 9dbbe962aa6c3ae7."
+  },
+  {
+    "query_id": "F07",
+    "query": "What data structures are studied in Unit 1 of CSE205 Data Structures and Algorithms?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE205.pdf"],
+    "supported_aspects": ["Arrays, stacks, queues, sparse matrices, time/space complexity in Unit I"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE205 syllabus chunk e560fecf44535359."
+  },
+  {
+    "query_id": "F08",
+    "query": "What is the examination date and session for Design Thinking INT335 according to the schedule snapshot?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["Examination date: 22 December 2026, Morning Session (09:30 - 12:30)"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in exam schedule snapshot chunk 681d3bcad839c0d3."
+  },
+  {
+    "query_id": "F09",
+    "query": "What textbooks are recommended by Russell and Norvig for the AI foundations course CSE276?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE276.pdf"],
+    "supported_aspects": ["Stuart Russell & Peter Norvig, 'Artificial Intelligence: A Modern Approach' prescribed for CSE276"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE276 syllabus chunk c189b88220ce60ad."
+  },
+  {
+    "query_id": "F10",
+    "query": "In academic regulations, what are the two main assessment components that make up a student's total course marks?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Continuous Assessment (50 marks) and End Term Examination (50 marks) components"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in academic regulations evaluation scheme chunk 31ca5807d744d887."
+  },
+  {
+    "query_id": "F11",
+    "query": "What topics are included under Unit 4 of PEL132 Communication Skills?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["PEL132.pdf"],
+    "supported_aspects": ["Employment communication, resume drafting, curriculum vitae, cover letters, group discussions, personal interviews"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in PEL132 syllabus chunk 36bc1767e108e4ba."
+  },
+  {
+    "query_id": "F12",
+    "query": "Which unit in CSE205 covers binary search trees and AVL trees?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE205.pdf"],
+    "supported_aspects": ["Binary trees, binary search trees (BST), AVL trees, tree traversals in Unit III"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE205 syllabus chunk 95638202970b1cb3."
+  },
+  {
+    "query_id": "F13",
+    "query": "What time do end-term morning examinations conclude according to the upcoming schedule notice?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["Examination morning session timings: 09:30 to 12:30 (concludes at 12:30)"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in exam schedule snapshot notice chunk 46bf705c7437774e."
+  },
+  {
+    "query_id": "F14",
+    "query": "What reference books by Forouzan and Tanenbaum are listed for Computer Networks CSE306?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE306.pdf"],
+    "supported_aspects": ["Tanenbaum & Wetherall ('Computer Networks') and Forouzan ('Data Communications and Networking')"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE306 syllabus chunk 1ee6d62886c99c67."
+  },
+  {
+    "query_id": "F15",
+    "query": "Are students allowed to leave the examination hall in the first 15 minutes or can students arrive late?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Entry gate closes 15 minutes after exam start; reporting is 30 minutes prior"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in FAQ011 chunk 539c486530393454."
+  },
+  {
+    "query_id": "F16",
+    "query": "What topics are taught in Unit 2 of MTH401 Discrete Mathematics?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["MTH401.pdf"],
+    "supported_aspects": ["Sets, set operations, functions, relations, equivalence relations, partial orders, Hasse diagrams, lattices"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in MTH401 syllabus chunk 869b736b4859a101."
+  },
+  {
+    "query_id": "F17",
+    "query": "What is covered in Unit 4 of Object Oriented Programming CSE202 regarding virtual functions and templates?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE202.pdf"],
+    "supported_aspects": ["Polymorphism, virtual functions, abstract classes, templates, exception handling in Unit IV"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE202 syllabus chunk be775cdccf11f750."
+  },
+  {
+    "query_id": "F18",
+    "query": "What are the course outcomes for CSE276 Artificial Intelligence Foundations?",
+    "category": "supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE276.pdf"],
+    "supported_aspects": ["Course Outcomes CO1 through CO4 for CSE276 on page 1"],
+    "missing_aspects": [],
+    "ground_truth_rationale": "Directly supported in CSE276 syllabus chunk 25c602058e1c6670."
+  },
+  {
+    "query_id": "F19",
+    "query": "When is the CSE202 OOP end-term exam and what is my assigned classroom room number?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["CSE202 examination date (12 Dec 2026) and session"],
+    "missing_aspects": ["Assigned classroom room number"],
+    "ground_truth_rationale": "Exam schedule is supported, but individual classroom room numbers are absent from the document."
+  },
+  {
+    "query_id": "F20",
+    "query": "What is the procedure for answer sheet scrutiny and what is the processing fee in rupees per course?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Answer sheet physical scrutiny and re-evaluation procedure via UMS in Section 6"],
+    "missing_aspects": ["Processing fee in rupees per course"],
+    "ground_truth_rationale": "Procedure is present in Section 6, but processing fee in rupees is missing from public regulations."
+  },
+  {
+    "query_id": "F21",
+    "query": "What are the prescribed textbooks for INT335 Design Thinking and where can I find the student solutions manual?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["INT335.pdf"],
+    "supported_aspects": ["Prescribed textbooks (Tim Brown, Tom Kelley)"],
+    "missing_aspects": ["Student solutions manual / answer key"],
+    "ground_truth_rationale": "Textbooks are supported in INT335 syllabus, but solutions manuals are completely absent."
+  },
+  {
+    "query_id": "F22",
+    "query": "When is the MTH401 exam and what is the seating roll number list for hall allotment?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["MTH401 exam date (24 Dec 2026)"],
+    "missing_aspects": ["Roll number seating list / hall allotment"],
+    "ground_truth_rationale": "Exam date is supported, but roll number seating allotment lists are not in the document."
+  },
+  {
+    "query_id": "F23",
+    "query": "What are the official rules on SGPA to percentage conversion formula for placement eligibility?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["SGPA / CGPA framework mentioned in Section 4"],
+    "missing_aspects": ["Official percentage conversion formula / mapping scale"],
+    "ground_truth_rationale": "Chunk 759679b1078092d7 explicitly states that public sources do not provide conversion formulas."
+  },
+  {
+    "query_id": "F24",
+    "query": "What is the minimum CGPA requirement to avoid academic probation according to university regulations?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Academic progression framework in Section 7"],
+    "missing_aspects": ["Minimum CGPA threshold / probation cutoff"],
+    "ground_truth_rationale": "Chunk 1d9be8b32b522d86 explicitly states that minimum CGPA thresholds are unavailable in public documents."
+  },
+  {
+    "query_id": "F25",
+    "query": "Can students attend remedial classes if their attendance is below 75% according to unverified student advice?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Student FAQ guidance on remedial classes in FAQ015"],
+    "missing_aspects": ["Official university verified policy"],
+    "ground_truth_rationale": "FAQ015 is explicitly marked needs_verification and advises consulting department desk."
+  },
+  {
+    "query_id": "F26",
+    "query": "What are the unverified rules for submitting medical certificates for missed examinations?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Student FAQ discussion on medical illness and missed exams in FAQ016"],
+    "missing_aspects": ["Official verified examination handbook policy"],
+    "ground_truth_rationale": "FAQ016 is unverified student material advising consultation with the latest examination handbook."
+  },
+  {
+    "query_id": "F27",
+    "query": "When is the CSE276 AI exam and what is the classroom room number for the morning session?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["CSE276 exam date (17 Dec 2026) and morning timing"],
+    "missing_aspects": ["Assigned classroom room number"],
+    "ground_truth_rationale": "Exam date is present in schedule snapshot, but room numbers are absent."
+  },
+  {
+    "query_id": "F28",
+    "query": "What are the textbooks for MTH401 and what is the processing fee in rupees for supplementary practice workbooks?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["MTH401.pdf"],
+    "supported_aspects": ["MTH401 textbooks (Kenneth Rosen)"],
+    "missing_aspects": ["Processing fee in rupees for workbooks"],
+    "ground_truth_rationale": "Textbooks are supported, but processing fee in rupees is missing."
+  },
+  {
+    "query_id": "F29",
+    "query": "What are the guidelines for student make-up examinations and what is the penalty fee in rupees for late filing?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Make-up examination eligibility on medical grounds in Section 5"],
+    "missing_aspects": ["Penalty fee in rupees for late filing"],
+    "ground_truth_rationale": "Make-up concept is present, but penalty fee amounts are absent."
+  },
+  {
+    "query_id": "F30",
+    "query": "What are the official pass criteria and minimum marks required for each continuous assessment component in B.Tech CSE?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Continuous assessment structure mentioned"],
+    "missing_aspects": ["Specific pass criteria and minimum marks per component"],
+    "ground_truth_rationale": "Chunk 759679b1078092d7 explicitly states pass criteria and credit-weighting rules are unverified in public sources."
+  },
+  {
+    "query_id": "F31",
+    "query": "When is the PEL132 communication exam scheduled and what is the assigned examination venue hall number?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "supported_aspects": ["PEL132 exam date (27 Dec 2026) and morning timing"],
+    "missing_aspects": ["Assigned hall / venue number"],
+    "ground_truth_rationale": "Exam date is present in schedule snapshot, but hall numbers are missing."
+  },
+  {
+    "query_id": "F32",
+    "query": "What are the re-evaluation rules for end term exams and what is the fee amount in rupees per subject?",
+    "category": "partial",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Re-evaluation application via UMS in Section 6"],
+    "missing_aspects": ["Fee amount in rupees per subject"],
+    "ground_truth_rationale": "Procedure is present in Section 6, but fee amount in rupees is absent."
+  },
+  {
+    "query_id": "F33",
+    "query": "What is the dynamic programming recurrence relation for the Floyd-Warshall all-pairs shortest path in CSE205?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Dynamic programming recurrence relation equation"],
+    "ground_truth_rationale": "Syllabus outlines mention high-level topic titles but do not contain concrete mathematical recurrence equations."
+  },
+  {
+    "query_id": "F34",
+    "query": "What compiler optimization flags like -O3 or -Wall should students use when compiling C++ code in CSE202 lab?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Compiler optimization flags like -O3 or -Wall"],
+    "ground_truth_rationale": "Compiler optimization flags are absent from the syllabus outline."
+  },
+  {
+    "query_id": "F35",
+    "query": "Which graphing calculator model such as Casio fx-991EX or TI-84 is allowed in MTH401 discrete math exams?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Specific graphing calculator hardware model permissions"],
+    "ground_truth_rationale": "Specific allowed graphing calculator hardware models are completely absent from corpus notices."
+  },
+  {
+    "query_id": "F36",
+    "query": "What are the complete safety rules for chemical handling in the biotechnology laboratory on campus?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Biotechnology laboratory chemical safety guidelines"],
+    "ground_truth_rationale": "Completely out of corpus; chatbot domain is CSE-AIML."
+  },
+  {
+    "query_id": "F37",
+    "query": "What was the CSE202 end-term exam schedule for academic year 2023-24?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Historical examination datesheet for past cohort 2023-24"],
+    "ground_truth_rationale": "Historical academic year query; corpus only covers active 2026-27 cohort."
+  },
+  {
+    "query_id": "F38",
+    "query": "What was the passing percentage required for CSE students in the 2022-23 academic year?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Historical passing percentage for 2022-23"],
+    "ground_truth_rationale": "Historical academic cohort 2022-23 is absent from corpus."
+  },
+  {
+    "query_id": "F39",
+    "query": "What are the monthly rental rates for off-campus student flats in Phagwara near LPU gate 1?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Off-campus student rental housing rates"],
+    "ground_truth_rationale": "Completely out-of-corpus real estate inquiry."
+  },
+  {
+    "query_id": "F40",
+    "query": "How can an engineering student get an official campus driving permit for a two-wheeler motorcycle?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Campus vehicle driving permits"],
+    "ground_truth_rationale": "Campus vehicle permits are completely absent from academic documents."
+  },
+  {
+    "query_id": "F41",
+    "query": "What are the laundry service timings and per-cloth washing rates in the boys hostel?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Hostel laundry service rates and timings"],
+    "ground_truth_rationale": "Hostel laundry services are absent from academic corpus."
+  },
+  {
+    "query_id": "F42",
+    "query": "What is the procedure for obtaining an on-campus student visa bonafide letter from the international office?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["International student visa bonafide letters"],
+    "ground_truth_rationale": "International affairs and visa procedures are absent from academic corpus."
+  },
+  {
+    "query_id": "F43",
+    "query": "What is the daily closing time for the university central library during summer vacation?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Central library vacation operating hours"],
+    "ground_truth_rationale": "Library vacation hours are absent from academic corpus."
+  },
+  {
+    "query_id": "F44",
+    "query": "What are the medical insurance claim reimbursement rules for students admitted to the campus hospital?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Student medical insurance reimbursement procedures"],
+    "ground_truth_rationale": "Campus hospital insurance reimbursement rules are absent from academic corpus."
+  },
+  {
+    "query_id": "F45",
+    "query": "What are the flight training prerequisites for students wanting to join the campus drone club?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Campus drone club flight training prerequisites"],
+    "ground_truth_rationale": "Drone club flight training rules are absent from academic corpus."
+  },
+  {
+    "query_id": "F46",
+    "query": "What mathematical proof by contradiction equation is prescribed for proving the Halting Problem in CSE276?",
+    "category": "insufficient",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "supported_aspects": [],
+    "missing_aspects": ["Mathematical proof by contradiction equation for Halting Problem"],
+    "ground_truth_rationale": "Formal mathematical proof equations are absent from high-level syllabus outlines."
+  },
+  {
+    "query_id": "F47",
+    "query": "What is the official minimum attendance requirement: does a student need 75% or 80% to sit for exams?",
+    "category": "conflicting",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Regulatory requirement (80% in Section 1) and student FAQ caution against unverified 75%"],
+    "missing_aspects": ["Reconciliation of conflicting percentage thresholds"],
+    "ground_truth_rationale": "Direct contradiction between Academic Regulations Section 1 (80% aggregate) and student FAQ013 (75% unverified cutoff)."
+  },
+  {
+    "query_id": "F48",
+    "query": "Should I maintain 80% or 75% attendance to prevent examination debarment in CSE-AIML?",
+    "category": "conflicting",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Attendance debarment thresholds (80% vs 75%)"],
+    "missing_aspects": ["Authoritative single threshold reconciliation"],
+    "ground_truth_rationale": "Direct regulatory conflict between 80% and 75% debarment cutoffs."
+  },
+  {
+    "query_id": "F49",
+    "query": "Is minimum attendance strictly 80% aggregate or is 75% accepted without medical exemption?",
+    "category": "conflicting",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "supported_aspects": ["Regulatory attendance criteria and medical relaxation clauses"],
+    "missing_aspects": ["Reconciliation of conflicting percentage interpretations"],
+    "ground_truth_rationale": "Contradictory claims in academic regulations vs student peer summaries regarding 80% aggregate vs 75%."
+  },
+  {
+    "query_id": "F50",
+    "query": "What are the semester exam passing marks? [Synthetic Conflict]",
+    "category": "conflicting",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "supported_aspects": ["Passing marks criteria"],
+    "missing_aspects": ["Synthetic conflict reconciliation"],
+    "ground_truth_rationale": "Synthetic conflict marker triggering conflict evaluation branch."
+  }
+]

@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "document_title": "LPU CSE-AIML Student FAQs",
+    "institution": "Lovely Professional University (LPU)",
+    "programme_scope": "CSE-AIML",
+    "dataset_type": "Initial FAQ dataset for RAG chatbot",
+    "created_date": "2026-11-13",
+    "source_basis": [
+      "Examination schedule and instructions supplied by the project owner in this conversation",
+      "Project context stating that subject syllabus files have been collected",
+      "Questions requiring current institutional policy are explicitly marked needs_verification"
+    ],
+    "important_note": "This is an initial dataset, not an official LPU publication. Verify all policy answers against current official LPU sources before treating them as authoritative. The exam schedule is a user-provided snapshot and must be refreshed from the official student portal."
+  },
+  "faqs": [
+    {
+      "faq_id": "FAQ001",
+      "category": "Syllabus",
+      "question": "Where can I find the syllabus for my CSE-AIML subjects?",
+      "answer": "Use the syllabus files collected in the project's syllabus dataset. Check the subject code and curriculum/version on the file before relying on it. If the required syllabus is not present, consult the current official LPU student portal or academic department.",
+      "source": "User-provided project dataset (syllabus folder); official portal for missing/current versions",
+      "verification_status": "partially_verified",
+      "applicable_scope": "LPU CSE-AIML; verify subject and curriculum version"
+    },
+    {
+      "faq_id": "FAQ002",
+      "category": "Syllabus",
+      "question": "Does this chatbot contain the syllabus for every CSE-AIML subject?",
+      "answer": "The project owner reports that syllabus files for all of their subjects have been added to the project's syllabus folder. The chatbot should answer only from files actually indexed in its knowledge base.",
+      "source": "User-provided project context; confirm against indexed files",
+      "verification_status": "partially_verified",
+      "applicable_scope": "Project-specific CSE-AIML syllabus collection"
+    },
+    {
+      "faq_id": "FAQ003",
+      "category": "Examinations",
+      "question": "When is the INT335 end-term examination?",
+      "answer": "The supplied schedule lists INT335 on 15 December 2026, from 09:30 to 12:30. It is an objective-type end-term examination with 60 MCQs worth 1 mark each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; INT335 only"
+    },
+    {
+      "faq_id": "FAQ004",
+      "category": "Examinations",
+      "question": "When is the MTH401 end-term examination and what is its paper pattern?",
+      "answer": "The supplied schedule lists MTH401 on 17 December 2026, from 09:30 to 12:30. Part A has 30 MCQs worth 1 mark each. Part B requires students to attempt any 4 out of 5 questions, worth 10 marks each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; MTH401 only"
+    },
+    {
+      "faq_id": "FAQ005",
+      "category": "Examinations",
+      "question": "When is the CSE306 end-term examination and what is its paper pattern?",
+      "answer": "The supplied schedule lists CSE306 on 19 December 2026, from 09:30 to 12:30. It is an objective-type end-term examination with 60 MCQs worth 1 mark each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE306 only"
+    },
+    {
+      "faq_id": "FAQ006",
+      "category": "Examinations",
+      "question": "When is the CSE202 theory end-term examination?",
+      "answer": "The supplied schedule lists the CSE202 theory end-term examination on 22 December 2026, from 09:30 to 12:30. Part A has 30 MCQs worth 1 mark each. Part B requires attempting any 4 out of 5 questions, worth 10 marks each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE202 theory only"
+    },
+    {
+      "faq_id": "FAQ007",
+      "category": "Examinations",
+      "question": "When is the CSE276 end-term examination and what is its pattern?",
+      "answer": "The supplied schedule lists CSE276 on 24 December 2026, from 09:30 to 12:30. Part A has 30 MCQs worth 1 mark each. Part B requires attempting any 4 out of 5 questions, worth 10 marks each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE276 only"
+    },
+    {
+      "faq_id": "FAQ008",
+      "category": "Examinations",
+      "question": "When is the CSE205 theory end-term examination?",
+      "answer": "The supplied schedule lists the CSE205 theory end-term examination on 28 December 2026, from 10:00 to 13:00. Part A has 30 MCQs worth 1 mark each. Part B requires attempting any 4 out of 5 questions, worth 10 marks each.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE205 theory only"
+    },
+    {
+      "faq_id": "FAQ009",
+      "category": "Practical Examinations",
+      "question": "When is the CSE205 practical end-term examination?",
+      "answer": "The supplied schedule lists the CSE205 practical end-term examination on 30 December 2026, from 13:30 to 16:30. The venue is shown as BYOD Room. The practical examination instructions are marked Awaited.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE205 practical only"
+    },
+    {
+      "faq_id": "FAQ010",
+      "category": "Practical Examinations",
+      "question": "When is the CSE202 practical end-term examination?",
+      "answer": "The supplied schedule lists the CSE202 practical end-term examination on 4 January 2027, from 13:30 to 16:30. The venue is shown as BYOD Room. The practical examination instructions are marked Awaited.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "CSE-AIML schedule snapshot; CSE202 practical only"
+    },
+    {
+      "faq_id": "FAQ011",
+      "category": "Examinations",
+      "question": "How early should I report for the listed end-term examinations?",
+      "answer": "The supplied schedule instructs students to report 30 minutes before the examination start time. It also states that examination entry closes 15 minutes before the start time. Follow any later official instructions if the schedule is updated.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "Only the examinations in the supplied schedule snapshot"
+    },
+    {
+      "faq_id": "FAQ012",
+      "category": "Examinations",
+      "question": "What does 'Awaited' mean in the examination schedule?",
+      "answer": "In the supplied schedule, 'Awaited' appears as the status for the listed examinations, and practical examination instructions are also marked Awaited. The schedule does not explain the administrative meaning of this status. Check the official student portal for updates.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_wording_meaning_needs_verification",
+      "applicable_scope": "Supplied schedule snapshot"
+    },
+    {
+      "faq_id": "FAQ013",
+      "category": "Attendance",
+      "question": "What is the minimum attendance required to sit for an examination at LPU?",
+      "answer": "This FAQ dataset does not yet contain a verified, current LPU rule for the minimum attendance requirement. Consult the latest official LPU academic regulations or student portal, or confirm with the academic office. Do not rely on an unverified percentage.",
+      "source": "No verified official source included in the current dataset",
+      "verification_status": "needs_verification",
+      "applicable_scope": "LPU; confirm current programme- and term-specific applicability"
+    },
+    {
+      "faq_id": "FAQ014",
+      "category": "Grading",
+      "question": "How is CGPA calculated at LPU?",
+      "answer": "The current official LPU grading and CGPA calculation rules have not yet been verified in this dataset. Consult the applicable academic regulations or official student portal before using a formula.",
+      "source": "No verified official source included in the current dataset",
+      "verification_status": "needs_verification",
+      "applicable_scope": "LPU CSE-AIML; confirm applicable curriculum"
+    },
+    {
+      "faq_id": "FAQ015",
+      "category": "Backlog and Reappear",
+      "question": "What should I do if I fail a subject?",
+      "answer": "The current rules for backlog, reappear registration, fees, eligibility and attempt limits are not verified in this dataset. Check the latest official LPU academic regulations and student portal, or contact the academic office.",
+      "source": "No verified official source included in the current dataset",
+      "verification_status": "needs_verification",
+      "applicable_scope": "LPU CSE-AIML; confirm current regulations"
+    },
+    {
+      "faq_id": "FAQ016",
+      "category": "Missed Examinations",
+      "question": "What happens if I miss an end-term examination?",
+      "answer": "This dataset does not contain a verified current LPU rule covering absence from an end-term examination, medical grounds, special examinations or reappear eligibility. Contact the academic office promptly and consult the current official regulations.",
+      "source": "No verified official source included in the current dataset",
+      "verification_status": "needs_verification",
+      "applicable_scope": "LPU CSE-AIML; confirm current regulations"
+    },
+    {
+      "faq_id": "FAQ017",
+      "category": "Re-evaluation",
+      "question": "Can I apply for re-evaluation if I am dissatisfied with my marks?",
+      "answer": "The applicable LPU process, deadlines, fees and eligibility for re-evaluation have not been verified in this dataset. Check the current official examination instructions or student portal.",
+      "source": "No verified official source included in the current dataset",
+      "verification_status": "needs_verification",
+      "applicable_scope": "LPU CSE-AIML; confirm current examination rules"
+    },
+    {
+      "faq_id": "FAQ018",
+      "category": "Examination Information",
+      "question": "Where should I check for the latest examination schedule or changes?",
+      "answer": "Use the official LPU student portal or the university's official examination communication channels. The schedule stored in this project is a snapshot supplied by the project owner and may become outdated.",
+      "source": "User-provided schedule context; official student portal should be treated as authoritative for updates",
+      "verification_status": "partially_verified",
+      "applicable_scope": "LPU CSE-AIML"
+    },
+    {
+      "faq_id": "FAQ019",
+      "category": "Examination Information",
+      "question": "Are the sample question papers available for every listed subject?",
+      "answer": "The supplied schedule explicitly shows a sample question paper link for MTH401 and CSE306. It does not confirm sample-paper availability for the other listed subjects.",
+      "source": "User-provided examination schedule in this conversation",
+      "verification_status": "verified_from_user_supplied_schedule",
+      "applicable_scope": "Supplied schedule snapshot"
+    },
+    {
+      "faq_id": "FAQ020",
+      "category": "General",
+      "question": "What should I do if the chatbot cannot find an answer in the university documents?",
+      "answer": "Treat the information as unavailable in the chatbot's current knowledge base. Check the official LPU student portal, current academic regulations or contact the relevant university office. Do not treat a generated guess as an official university rule.",
+      "source": "Project answer policy",
+      "verification_status": "project_policy",
+      "applicable_scope": "LPU CSE-AIML chatbot"
+    }
+  ]
+}

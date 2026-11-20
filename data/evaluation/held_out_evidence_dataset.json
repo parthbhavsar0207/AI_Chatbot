@@ -1,0 +1,258 @@
+[
+  {
+    "query_id": "H01",
+    "query": "Could you list the required course readings and authors for Computer Networks CSE306?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE306.pdf"],
+    "notes": "Directly supported: Tanenbaum, Forouzan, Kurose & Ross in CSE306 syllabus."
+  },
+  {
+    "query_id": "H02",
+    "query": "What specific algorithms and searching strategies are taught in Artificial Intelligence Foundations CSE276 Unit II?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE276.pdf"],
+    "notes": "Directly supported: Uninformed and informed search, A*, BFS, DFS in Unit II."
+  },
+  {
+    "query_id": "H03",
+    "query": "In PEL132 Communication Skills, what communicative competencies are students expected to demonstrate upon course completion?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["PEL132.pdf"],
+    "notes": "Directly supported: Course outcomes CO1-CO4 in PEL132 syllabus."
+  },
+  {
+    "query_id": "H04",
+    "query": "Which discrete mathematics topics are covered under recurrence relations and generating functions in MTH401?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["MTH401.pdf"],
+    "notes": "Directly supported: Unit III/IV recurrence relations and generating functions."
+  },
+  {
+    "query_id": "H05",
+    "query": "Does the Design Thinking course INT335 cover prototyping and usability testing workflows?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["INT335.pdf"],
+    "notes": "Directly supported: Unit IV covers prototyping and user testing."
+  },
+  {
+    "query_id": "H06",
+    "query": "What is the morning session reporting time guideline for the 2026-27 end-term examinations?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "Directly supported: FAQ011 specifies reporting at least 30 minutes prior to exam start."
+  },
+  {
+    "query_id": "H07",
+    "query": "What are the weightage distributions of continuous assessment components versus end-term exams in academic regulations?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "notes": "Directly supported: Section 3 specifies 50% CA and 50% End-term examination weightage."
+  },
+  {
+    "query_id": "H08",
+    "query": "In CSE205, what are the primary course outcomes regarding data structure selection and complexity analysis?",
+    "category": "paraphrased_supported",
+    "expected_decision": "sufficient",
+    "expected_source_files": ["CSE205.pdf"],
+    "notes": "Directly supported: CO1 and CO2 in CSE205."
+  },
+  {
+    "query_id": "H09",
+    "query": "What are the compiler optimization flags like -O3 or -g required for CSE202 lab programming assignments?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "High lexical overlap with CSE202, but compiler optimization flags are completely absent from corpus."
+  },
+  {
+    "query_id": "H10",
+    "query": "What is the dynamic programming recurrence formula for the Bellman-Ford shortest path algorithm in CSE205?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Mentions CSE205, but dynamic programming recurrence formula equations are absent from syllabus outline."
+  },
+  {
+    "query_id": "H11",
+    "query": "What are the Wi-Fi 7 802.11be channel bandwidth allocations covered in the CSE306 wireless networking unit?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Mentions CSE306 networking, but Wi-Fi 7 channel bandwidths are absent from corpus."
+  },
+  {
+    "query_id": "H12",
+    "query": "Which deep learning framework PyTorch 2.0 or TensorFlow is mandated for the INT335 semester project?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "INT335 is Design Thinking; deep learning software framework requirements are absent."
+  },
+  {
+    "query_id": "H13",
+    "query": "What is the penalty fee charged for submitting a grade re-evaluation form after the 7-day window closes?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Re-evaluation deadline is mentioned, but late submission penalty fees do not exist in corpus."
+  },
+  {
+    "query_id": "H14",
+    "query": "What model of graphing calculator such as TI-84 Plus CE is permitted inside MTH401 examinations?",
+    "category": "high_similarity_unsupported",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Permitted graphing calculator hardware models are completely absent from academic notices."
+  },
+  {
+    "query_id": "H15",
+    "query": "When is the INT335 end-term examination scheduled, and what is the assigned classroom room number?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["lpu_cse_aiml_upcoming_end_term_examinations_2026-27.docx"],
+    "notes": "Exam date is present, but classroom room number is missing from corpus."
+  },
+  {
+    "query_id": "H16",
+    "query": "What are the prescribed textbooks for PEL132, and what is the processing fee in rupees for supplementary audio materials?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["PEL132.pdf"],
+    "notes": "Prescribed textbooks are present, but fee in rupees is missing."
+  },
+  {
+    "query_id": "H17",
+    "query": "What is the procedure to request an examination answer script copy, and what is the processing fee in rupees?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "notes": "Re-evaluation procedure is present in Section 6, but processing fee in rupees is missing."
+  },
+  {
+    "query_id": "H18",
+    "query": "What are the semester progression rules and minimum required CGPA to register for the next academic year?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "notes": "Section 9 explicitly states minimum CGPA threshold is not provided in public sources."
+  },
+  {
+    "query_id": "H19",
+    "query": "What topics are taught in Unit V of Discrete Mathematics MTH401, and what classroom room number is assigned?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["MTH401.pdf"],
+    "notes": "Unit V topics are present, but room number is absent."
+  },
+  {
+    "query_id": "H20",
+    "query": "What are the regulations on grade conversion and letter grade formulas for B.Tech CSE?",
+    "category": "partially_supported",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "notes": "Section 7 explicitly notes that conversion formulas are not established in public documents."
+  },
+  {
+    "query_id": "H21",
+    "query": "What were the CSE205 end-term examination dates for the 2023-24 winter term?",
+    "category": "outdated_or_unverified",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Requests historical academic year 2023-24; corpus only covers 2026-27."
+  },
+  {
+    "query_id": "H22",
+    "query": "What was the passing percentage cutoff for B.Tech CSE in academic year 2024-25?",
+    "category": "outdated_or_unverified",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Requests historical academic year 2024-25."
+  },
+  {
+    "query_id": "H23",
+    "query": "What are the unverified student guidelines regarding remedial classes before end term?",
+    "category": "outdated_or_unverified",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "FAQ015 is explicitly marked needs_verification."
+  },
+  {
+    "query_id": "H24",
+    "query": "What are the unverified procedures for medical leave submission if a student misses final examinations?",
+    "category": "outdated_or_unverified",
+    "expected_decision": "partial",
+    "expected_source_files": ["LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "FAQ016 is unverified student material advising consultation with examination handbook."
+  },
+  {
+    "query_id": "H25",
+    "query": "Is the required attendance to take examinations 80% as per academic regulations or 75% as mentioned by student groups?",
+    "category": "conflicting_sources",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "Direct conflict: Regulations Section 1 says 80% aggregate, FAQ013 cautions against unverified 75%."
+  },
+  {
+    "query_id": "H26",
+    "query": "Do students need 75% or 80% aggregate attendance to avoid being debarred from end-term exams?",
+    "category": "conflicting_sources",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "Regulatory ambiguity: 75% vs 80% attendance requirement."
+  },
+  {
+    "query_id": "H27",
+    "query": "What is the official policy regarding whether attendance criteria is 80% aggregate or 75% relaxed?",
+    "category": "conflicting_sources",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx", "LPU_CSE_AIML_Student_FAQs.json"],
+    "notes": "Regulatory conflict between 80% and 75% thresholds."
+  },
+  {
+    "query_id": "H28",
+    "query": "What is the course grading policy? [Synthetic Conflict]",
+    "category": "conflicting_sources",
+    "expected_decision": "conflicting",
+    "expected_source_files": ["LPU_CSE_Academic_Regulations.docx"],
+    "notes": "Synthetic conflict marker."
+  },
+  {
+    "query_id": "H29",
+    "query": "What are the rules regarding campus night curfew for hostel residents?",
+    "category": "ambiguous_out_of_scope",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Hostel night curfew policy is absent from academic documents."
+  },
+  {
+    "query_id": "H30",
+    "query": "How can students apply for on-campus student visa extensions at the international affairs office?",
+    "category": "ambiguous_out_of_scope",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Visa extensions and international affairs procedures are absent."
+  },
+  {
+    "query_id": "H31",
+    "query": "What are the cafeteria meal combo prices during evening hours?",
+    "category": "ambiguous_out_of_scope",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "Campus dining and meal prices are absent."
+  },
+  {
+    "query_id": "H32",
+    "query": "Where is the university electric vehicle charging station located on campus?",
+    "category": "ambiguous_out_of_scope",
+    "expected_decision": "insufficient",
+    "expected_source_files": [],
+    "notes": "EV charging station information is absent."
+  }
+]

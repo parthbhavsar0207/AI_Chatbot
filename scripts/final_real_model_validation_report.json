@@ -1,0 +1,462 @@
+[
+  {
+    "scenario": "Supported Syllabus Question (Topics)",
+    "query": "What topics are covered in CSE202 Object Oriented Programming?",
+    "retrieved_chunk_ids": [
+      "0e8460c617cce338",
+      "be775cdccf11f750",
+      "695bb51bc95d23ba",
+      "8ad84b89037231bb",
+      "834a1fce29f69d70"
+    ],
+    "evidence_state": "sufficient",
+    "decision_reason": "SUFFICIENT_OFFICIAL_EVIDENCE",
+    "missing_information": null,
+    "conflict_details": null,
+    "supplied_context_sample": "--- CHUNK ID: 0e8460c617cce338 | Source: CSE202.pdf | Category: syllabus ---\n[Course: CSE202 - CSE202:OBJECT ORIENTED PROGRAMMING (Page 2)]\n\nText Books: 1. OBJECT ORIENTED PROGRAMMING IN C++ by ROBERT LAFORE, PEARSON\n\nReferences: 1. PROGRAMMING WITH C++ by D RAVICHANDRAN, MCGRAW HILL EDUCATION\n2. OBJECT ORIENTED PROGRAMMING IN C++ by E BALAGURUSAMY, MCGRAW HILL\nEDUCATION\nList of Practicals / Exper...",
+    "answer": "The topics covered in CSE202: Object Oriented Programming include:\n\n- Concepts and Basics of C++ Programming: Introduction to OOP, reading/writing data using cin and cout, creating classes, access to class members, differences between structures, unions, enumerations, and classes, inline and non-inline member functions, static data members and functions, procedural vs object-oriented programming paradigms, input/output streams [[cite:8ad84b89037231bb]].\n\n- Functions: Functions with default parameters, inline functions, manipulators, function overloading, scope rules, friend functions and classes, differences between call by value, call by address, and call by reference, recursion [[cite:8ad84b89037231bb]].\n\n- Pointers, Reference Variables, Arrays and String Concepts: Void pointers, pointer arithmetic, pointer to pointer, dangling and wild pointers, null pointer, classes containing pointers, pointer to objects, this pointer, array of objects, standard C++ string class, member functions, string modifiers, differences between pointers and references, multidimensional arrays (inside main and inside class), pointer to data member [[cite:8ad84b89037231bb]].\n\n- Constructors, Destructors and File Handling: Manager functions (constructors and destructors), default constructor, constructor with default arguments, destructors, parameterized constructor, copy constructor, initializer lists [[cite:be775cdccf11f750]].\n\n- Data File operations: Opening and closing of files, modes of file, file stream functions, reading/writing of files, sequential and random access file processing, binary file operations, classes and file operations, structures and file operations [[cite:be775cdccf11f750]].\n\n- Operator Overloading and Type Conversion: Operator overloading (unary and binary), type conversions (basic type to class type, class type to basic type) [[cite:be775cdccf11f750]].\n\n- Inheritance: Inheritance basics (derived and base classes), types (simple, multi-level, multiple, hierarchical), modes (private, protected, public), overriding member functions, order of execution of constructors and destructors, resolving ambiguities in inheritance, virtual base class, aggregation and composition [[cite:be775cdccf11f750]].\n\n- Dynamic Memory Management and Polymorphism: Dynamic memory allocation using new and delete operators, virtual destructors, compile and runtime polymorphism, virtual functions, dynamic constructors, abstract classes and concrete classes, self-referential classes, pure virtual functions, early binding and late binding, memory leaks and allocation failures [[cite:be775cdccf11f750]].\n\n- Exception Handling, Templates and Standard Template Library (STL): Basics of exception handling, throwing and catching mechanisms, rethrowing exceptions, function and class templates, class templates with inheritance, introduction to STL containers, algorithms, and iterators, container types such as vector and list [[cite:695bb51bc95d23ba]].\n\nThese topics are structured across Units I to VI in the syllabus [[cite:0e8460c617cce338]].",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "citation_validation_status": "valid",
+    "valid_citations": [
+      {
+        "chunk_id": "8ad84b89037231bb",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "be775cdccf11f750",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "695bb51bc95d23ba",
+        "document_id": "18d1d98f38e9b02d",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      },
+      {
+        "chunk_id": "0e8460c617cce338",
+        "document_id": "bdd1897dea6d202c",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      }
+    ],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [
+      {
+        "source_file": "CSE202.pdf",
+        "authority_level": "curriculum_syllabus",
+        "document_origin": "department_course_outline",
+        "institutional_authenticity": "unverified_official_seal",
+        "verification_status": "verified_syllabus_structure"
+      }
+    ],
+    "latencies": {
+      "retrieval_ms": 117.43,
+      "rerank_ms": 665.46,
+      "generation_ms": 12615.41,
+      "total_ms": 13398.83,
+      "wall_time_s": 13.399
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 12.84,
+        "avail_gb": 2.88,
+        "pct": 81
+      },
+      "process_ram_mb": {
+        "working_set_mb": 712.96,
+        "private_mb": 1501.76
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Supported Syllabus Question (Textbooks)",
+    "query": "What are the prescribed textbooks for CSE202?",
+    "retrieved_chunk_ids": [
+      "e440696344579313",
+      "5b0af7e4c23e215e",
+      "0e8460c617cce338",
+      "b659f1e6666d79a9",
+      "dee16b83e6ec350b"
+    ],
+    "evidence_state": "sufficient",
+    "decision_reason": "SUFFICIENT_OFFICIAL_EVIDENCE",
+    "missing_information": null,
+    "conflict_details": null,
+    "supplied_context_sample": "--- CHUNK ID: e440696344579313 | Source: LPU_CSE_AIML_Student_FAQs.json | Category: Practical Examinations ---\nQuestion: When is the CSE202 practical end-term examination?\nAnswer: The supplied schedule lists the CSE202 practical end-term examination on 4 January 2027, from 13:30 to 16:30. The venue is shown as BYOD Room. The practical examination instructions are marked Awaited.\nApplicable Scope: ...",
+    "answer": "The prescribed textbook for CSE202 is \"OBJECT ORIENTED PROGRAMMING IN C++\" by ROBERT LAFORE, PEARSON [[cite:0e8460c617cce338]].",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "citation_validation_status": "valid",
+    "valid_citations": [
+      {
+        "chunk_id": "0e8460c617cce338",
+        "document_id": "bdd1897dea6d202c",
+        "source_file": "CSE202.pdf",
+        "category": "syllabus",
+        "course_code": "CSE202",
+        "title": "CSE202:OBJECT ORIENTED PROGRAMMING"
+      }
+    ],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [
+      {
+        "source_file": "CSE202.pdf",
+        "authority_level": "curriculum_syllabus",
+        "document_origin": "department_course_outline",
+        "institutional_authenticity": "unverified_official_seal",
+        "verification_status": "verified_syllabus_structure"
+      }
+    ],
+    "latencies": {
+      "retrieval_ms": 107.55,
+      "rerank_ms": 609.44,
+      "generation_ms": 1296.35,
+      "total_ms": 2013.56,
+      "wall_time_s": 2.014
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 13.03,
+        "avail_gb": 2.69,
+        "pct": 82
+      },
+      "process_ram_mb": {
+        "working_set_mb": 714.37,
+        "private_mb": 1503.38
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Supported Syllabus Question (Unit coverage)",
+    "query": "Which unit in CSE205 covers heaps and hashing?",
+    "retrieved_chunk_ids": [
+      "cdff983623644088",
+      "834a1fce29f69d70",
+      "be775cdccf11f750",
+      "695bb51bc95d23ba",
+      "dfe7b1b8bc85f05d"
+    ],
+    "evidence_state": "sufficient",
+    "decision_reason": "SUFFICIENT_OFFICIAL_EVIDENCE",
+    "missing_information": null,
+    "conflict_details": null,
+    "supplied_context_sample": "--- CHUNK ID: cdff983623644088 | Source: CSE205.pdf | Category: syllabus ---\n[Course: CSE205 - CSE205: DATA STRUCTURES AND ALGORITHMS (Page 1)]\n\nUnit V\nHeaps and Hashing\n :\nHeaps: Introduction, Insertion, Deletion, HeapSort, Hashing introduction: hash\nfunctions, hash table, Open hashing (separate chaining), Closed hashing (open addressing): linear\nprobing, quadratic probing and double hashing\n\nUni...",
+    "answer": "Unit V of CSE205 covers heaps and hashing [[cite:cdff983623644088]].",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "citation_validation_status": "valid",
+    "valid_citations": [
+      {
+        "chunk_id": "cdff983623644088",
+        "document_id": "47eec007c9b0ec4c",
+        "source_file": "CSE205.pdf",
+        "category": "syllabus",
+        "course_code": "CSE205",
+        "title": "CSE205: DATA STRUCTURES AND ALGORITHMS"
+      }
+    ],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [
+      {
+        "source_file": "CSE205.pdf",
+        "authority_level": "curriculum_syllabus",
+        "document_origin": "department_course_outline",
+        "institutional_authenticity": "unverified_official_seal",
+        "verification_status": "verified_syllabus_structure"
+      }
+    ],
+    "latencies": {
+      "retrieval_ms": 113.16,
+      "rerank_ms": 641.23,
+      "generation_ms": 1054.0,
+      "total_ms": 1808.69,
+      "wall_time_s": 1.809
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 12.94,
+        "avail_gb": 2.77,
+        "pct": 82
+      },
+      "process_ram_mb": {
+        "working_set_mb": 718.53,
+        "private_mb": 1505.93
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Partially Supported Question (Attendance eligibility)",
+    "query": "What is the minimum attendance required for academic eligibility at LPU?",
+    "retrieved_chunk_ids": [
+      "382938f0624cff43",
+      "448a532e04fa2302",
+      "dce911ea5392858b",
+      "1d9be8b32b522d86",
+      "31ca5807d744d887"
+    ],
+    "evidence_state": "partial",
+    "decision_reason": "PARTIAL_EVIDENCE_MISSING_DETAILS",
+    "missing_information": [
+      "Top evidence is unverified student material flagged as requiring official ERP/handbook verification."
+    ],
+    "conflict_details": null,
+    "supplied_context_sample": "--- CHUNK ID: 382938f0624cff43 | Source: LPU_CSE_AIML_Student_FAQs.json | Category: Attendance ---\nQuestion: What is the minimum attendance required to sit for an examination at LPU?\nAnswer: This FAQ dataset does not yet contain a verified, current LPU rule for the minimum attendance requirement. Consult the latest official LPU academic regulations or student portal, or confirm with the academic o...",
+    "answer": "The minimum aggregate attendance required for academic eligibility at LPU is 75%, following a 5 percentage-point relaxation for medical reasons and other genuine exigencies, as stated in the Prospectus 2025. This 75% attendance is mandatory after such relaxation and applies to the aggregate of delivered classes across registered theory and practical courses, including elective, specialization, additional, and backlog courses [[cite:448a532e04fa2302]].\n\nHowever, the documents do not establish whether this aggregate attendance directly determines examination eligibility or whether per-course attendance requirements, procedures for requesting relaxation, or debarment rules are currently in effect. These operational details require verification from the current LPU handbook, ERP, or academic office [[cite:dce911ea5392858b]].\n\nThe absence of verified, current rules for per-exam attendance or exam registration eligibility means that the information regarding minimum attendance for each individual examination is not available in the provided documents [[cite:dce911ea5392858b]].",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "citation_validation_status": "regenerated_valid",
+    "valid_citations": [
+      {
+        "chunk_id": "448a532e04fa2302",
+        "document_id": "c745b4365de6d630",
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "category": "regulations",
+        "course_code": null,
+        "title": "LPU CSE Academic Regulations"
+      },
+      {
+        "chunk_id": "dce911ea5392858b",
+        "document_id": "cfff181c9df019ea",
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "category": "regulations",
+        "course_code": null,
+        "title": "LPU CSE Academic Regulations"
+      }
+    ],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [
+      {
+        "source_file": "LPU_CSE_Academic_Regulations.docx",
+        "authority_level": "departmental_academic_regulations",
+        "document_origin": "internal_department_guideline",
+        "institutional_authenticity": "partially_verified",
+        "verification_status": "operational_rules_unverified"
+      }
+    ],
+    "latencies": {
+      "retrieval_ms": 101.61,
+      "rerank_ms": 575.82,
+      "generation_ms": 8359.32,
+      "total_ms": 9037.31,
+      "wall_time_s": 9.037
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 13.06,
+        "avail_gb": 2.65,
+        "pct": 83
+      },
+      "process_ram_mb": {
+        "working_set_mb": 735.51,
+        "private_mb": 1508.05
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Multi-Aspect Question (Missed exam due to illness)",
+    "query": "What happens if a student misses an end-term examination due to medical illness?",
+    "retrieved_chunk_ids": [
+      "d73cc173a908b450",
+      "539c486530393454",
+      "3fdd9fe710d5d23a",
+      "1fbb630b890b4655",
+      "423178c507b79191"
+    ],
+    "evidence_state": "partial",
+    "decision_reason": "PARTIAL_EVIDENCE_MISSING_DETAILS",
+    "missing_information": [
+      "Top evidence is unverified student material flagged as requiring official ERP/handbook verification."
+    ],
+    "conflict_details": null,
+    "supplied_context_sample": "--- CHUNK ID: d73cc173a908b450 | Source: LPU_CSE_AIML_Student_FAQs.json | Category: Missed Examinations ---\nQuestion: What happens if I miss an end-term examination?\nAnswer: This dataset does not contain a verified current LPU rule covering absence from an end-term examination, medical grounds, special examinations or reappear eligibility. Contact the academic office promptly and consult the curre...",
+    "answer": "The provided context does not contain any verified rules or regulations regarding what happens if a student misses an end-term examination due to medical illness. While there is information about reporting times and examination schedules, no specific policy on medical absences or reappear eligibility is documented in the context [[cite:d73cc173a908b450]]. \n\nTherefore, information regarding the consequences of missing an end-term examination due to medical illness is not available in the documents. [[cite:d73cc173a908b450]]",
+    "model_identifier": "qwen3:4b-instruct-2507-q4_K_M",
+    "citation_validation_status": "valid",
+    "valid_citations": [
+      {
+        "chunk_id": "d73cc173a908b450",
+        "document_id": "LPU_CSE_AIML_Student_FAQs_FAQ016",
+        "source_file": "LPU_CSE_AIML_Student_FAQs.json",
+        "category": "Missed Examinations",
+        "course_code": null,
+        "title": "LPU CSE-AIML Student FAQs - FAQ016"
+      }
+    ],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [
+      {
+        "source_file": "LPU_CSE_AIML_Student_FAQs.json",
+        "authority_level": "student_contributed_faq",
+        "document_origin": "student_peer_contributions",
+        "institutional_authenticity": "unverified",
+        "verification_status": "item_tagged"
+      }
+    ],
+    "latencies": {
+      "retrieval_ms": 65.04,
+      "rerank_ms": 368.57,
+      "generation_ms": 2256.04,
+      "total_ms": 2689.81,
+      "wall_time_s": 2.69
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 13.11,
+        "avail_gb": 2.6,
+        "pct": 83
+      },
+      "process_ram_mb": {
+        "working_set_mb": 737.62,
+        "private_mb": 1509.42
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Unsupported Question (Hostel fee refund)",
+    "query": "What is the refund policy for hostel fee cancellation if a student leaves in the middle of the semester?",
+    "retrieved_chunk_ids": [
+      "2c0b0d59fcbb8bf9",
+      "f8de398a6965c6ab",
+      "b90be9da049ebd17",
+      "d73cc173a908b450",
+      "e2639b4a2762dffb"
+    ],
+    "evidence_state": "insufficient",
+    "decision_reason": "INSUFFICIENT_EVIDENCE_OUT_OF_CORPUS",
+    "missing_information": [
+      "Full topic coverage is absent from academic documents."
+    ],
+    "conflict_details": null,
+    "supplied_context_sample": "Bypassed (Deterministic Response)",
+    "answer": "The available university documents do not sufficiently support an answer to this question. The requested topic is either outside the indexed official documents or lacks necessary operational detail. Please consult the relevant university department, official portal, or examination board directly.",
+    "model_identifier": "deterministic_abstention_engine",
+    "citation_validation_status": "bypassed",
+    "valid_citations": [],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [],
+    "latencies": {
+      "retrieval_ms": 85.18,
+      "rerank_ms": 482.67,
+      "generation_ms": 0.0,
+      "total_ms": 568.0,
+      "wall_time_s": 0.568
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 13.08,
+        "avail_gb": 2.63,
+        "pct": 83
+      },
+      "process_ram_mb": {
+        "working_set_mb": 738.03,
+        "private_mb": 1509.7
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  },
+  {
+    "scenario": "Conflicting Policy Question (Attendance percentage)",
+    "query": "What is the official minimum percentage attendance required to appear in examinations: is it 75% or 80%?",
+    "retrieved_chunk_ids": [
+      "448a532e04fa2302",
+      "382938f0624cff43",
+      "dce911ea5392858b",
+      "539c486530393454",
+      "d73cc173a908b450"
+    ],
+    "evidence_state": "conflicting",
+    "decision_reason": "CONTRADICTORY_EVIDENCE_DETECTED",
+    "missing_information": null,
+    "conflict_details": {
+      "conflict_type": "regulatory_incompatibility",
+      "competing_claims": [
+        "LPU CSE Academic Regulations (Section 1) specifies an 80% aggregate attendance requirement (75% with relaxation).",
+        "Student FAQ dataset (FAQ013) notes the operational examination debarment rule is unverified and cautions against unverified percentages (e.g. 75%)."
+      ],
+      "affected_chunk_ids": [
+        "448a532e04fa2302",
+        "382938f0624cff43",
+        "dce911ea5392858b"
+      ],
+      "affected_sources": [
+        "LPU_CSE_Academic_Regulations.docx",
+        "LPU_CSE_AIML_Student_FAQs.json"
+      ]
+    },
+    "supplied_context_sample": "Bypassed (Deterministic Response)",
+    "answer": "A direct policy contradiction was detected across official documents (LPU_CSE_Academic_Regulations.docx, LPU_CSE_AIML_Student_FAQs.json). Evaluation details: Contradictory or incompatible claims exist between relevant sources and cannot safely be reconciled.. Because conflicting institutional policies cannot be automatically resolved by an AI assistant, please verify the effective policy version with the Academic Dean or Registrar's Office.",
+    "model_identifier": "deterministic_conflict_engine",
+    "citation_validation_status": "bypassed",
+    "valid_citations": [],
+    "invalid_citations": [],
+    "structural_coverage_passed": true,
+    "source_metadata": [],
+    "latencies": {
+      "retrieval_ms": 85.5,
+      "rerank_ms": 484.52,
+      "generation_ms": 0.0,
+      "total_ms": 570.1,
+      "wall_time_s": 0.57
+    },
+    "resources": {
+      "system_ram_gb": {
+        "total_gb": 15.71,
+        "used_gb": 13.1,
+        "avail_gb": 2.62,
+        "pct": 83
+      },
+      "process_ram_mb": {
+        "working_set_mb": 738.21,
+        "private_mb": 1509.73
+      },
+      "gpu_vram_mib": {
+        "vram_used_mib": 3145.0,
+        "vram_total_mib": 6141.0
+      }
+    }
+  }
+]

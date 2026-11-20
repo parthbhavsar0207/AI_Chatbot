@@ -1,0 +1,49 @@
+# ==============================================================================
+# Python & Backend .gitignore
+# ==============================================================================
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-code & Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Type Checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Secrets & Local Environment
+.env
+.env.*
+!.env.example
+
+# Local ChromaDB & Persistent Vector Storage
+chroma/
+*.sqlite3
+*.parquet
+*.db
+.chroma/
+
+# Local Model Caches (FastEmbed / HuggingFace)
+.fastembed_cache/
+.cache/
+
+# IDE & OS specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

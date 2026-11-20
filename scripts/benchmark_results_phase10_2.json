@@ -1,0 +1,436 @@
+{
+  "qwen2.5:3b-instruct-q4_K_M": {
+    "name": "Qwen2.5-3B-Instruct (Q4_K_M)",
+    "role": "Baseline Candidate",
+    "warmup": {
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "text": "The course name is CSE101.",
+      "total_client_time_s": 0.458,
+      "ttft_s": 0.329,
+      "load_duration_s": 0.006,
+      "prompt_eval_duration_s": 0.3,
+      "eval_duration_s": 0.128,
+      "prompt_eval_count": 76,
+      "eval_count": 11,
+      "generation_tps": 86.11,
+      "peak_vram_mib": 2331.0,
+      "peak_system_ram_mb": 13227.5,
+      "avg_gpu_util_pct": 0.0
+    },
+    "layer_placement": [
+      {
+        "name": "qwen2.5:3b-instruct-q4_K_M",
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "size": 2163568803,
+        "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "3.1B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-17T22:15:25.277218+05:30",
+        "size_vram": 2163568803,
+        "context_length": 4096,
+        "runner": "llamacpp"
+      }
+    ],
+    "tests": [
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "Prerequisite: Programming in C/C++ (CSE101 or CSE202) with minimum passing grade 'E'.\nCredit count: 4",
+        "total_client_time_s": 0.45,
+        "ttft_s": 0.049,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.041,
+        "eval_duration_s": 0.4,
+        "prompt_eval_count": 202,
+        "eval_count": 34,
+        "generation_tps": 85.07,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13232.6,
+        "avg_gpu_util_pct": 18.6,
+        "test_id": "prompt_1_simple_factual",
+        "test_category": "Simple factual question",
+        "description": "Direct, single-hop factual query grounded in course syllabus details."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "The Academic Regulations 2024 stipulate that every registered student must maintain a minimum attendance of 75% in each registered course (both theory and practical) to be eligible to appear in the End-Term Examination (ETE). If a student's attendance falls below 75% but remains at or above 65%, they may be granted a 10% condonation on medical grounds or for authorized university representation (such as sports, cultural, or academic conferences), provided that the application is submitted within 3 working days of returning to campus and is approved by the Competent Authority.\n\nIf a student's final attendance is below 65% (or below 75% without authorized condonation), they will be officially Debarred ('D' Grade) from taking the End-Term Examination in that specific course. Debarred students must re-register for the course as a backlog in subsequent terms.\n\nFor medical leave, a student seeking condonation must submit a formal Medical Regularization Application accompanied by an authentic medical certificate and hospital discharge summary to the Department Head or Proctor within 3 working days of returning to campus. Any late submissions will be summarily rejected.",
+        "total_client_time_s": 2.966,
+        "ttft_s": 0.036,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.015,
+        "eval_duration_s": 2.927,
+        "prompt_eval_count": 354,
+        "eval_count": 242,
+        "generation_tps": 82.68,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13216.0,
+        "avg_gpu_util_pct": 93.3,
+        "test_id": "prompt_2_multipara_university",
+        "test_category": "Multi-paragraph university-context question",
+        "description": "Multi-paragraph policy explanation spanning attendance thresholds, debarment consequences, and medical regularization."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "The grading components for CSE306 are as follows:\n1. Continuous Assessment (CA): 25% (Best 3 out of 4 quizzes, programming assignments, and class participation)\n2. Mid-Term Examination (MTE): 25% (Covers Units 1 to 3, duration 90 minutes)\n3. End-Term Examination (ETE): 50% (Comprehensive, covers Units 1 to 6, duration 180 minutes)\n\nThe overall passing percentage is 40%.\n\nThe minimum required score in the End-Term Examination alone cannot be determined from the provided context. The context only specifies the weight of the ETE in the overall grading structure, but not the minimum score required in the ETE to pass the course.",
+        "total_client_time_s": 2.012,
+        "ttft_s": 0.04,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.017,
+        "eval_duration_s": 1.971,
+        "prompt_eval_count": 293,
+        "eval_count": 164,
+        "generation_tps": 83.21,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13214.4,
+        "avg_gpu_util_pct": 92.6,
+        "test_id": "prompt_3_multiaspect_missing_detail",
+        "test_category": "Multi-aspect question with one missing detail",
+        "description": "Multi-aspect question where grading components and passing percentage are supplied, but minimum end-term score is missing."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "- Submit overnight leave request on the University Management System (UMS) portal at least 24 hours prior to departure.\n- Obtain digital approval from registered parent or legal guardian via the automated IVR/SMS verification system.\n- Scan biometric student ID and display approved digital gate-pass QR code at the campus main security gate.",
+        "total_client_time_s": 0.838,
+        "ttft_s": 0.034,
+        "load_duration_s": 0.005,
+        "prompt_eval_duration_s": 0.012,
+        "eval_duration_s": 0.801,
+        "prompt_eval_count": 273,
+        "eval_count": 67,
+        "generation_tps": 83.68,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13209.0,
+        "avg_gpu_util_pct": 93.0,
+        "test_id": "prompt_4_strict_instruction_following",
+        "test_category": "Strict instruction-following question",
+        "description": "Strict structural constraint: exactly 3 bullet points, each starting with an action verb, no intro or outro text."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "[Doc 1: Academic_Regulations_2024.pdf] A student who has received a grade 'C' or above is ineligible to appear for the Improvement Examination. [Doc 2: Examination_Policy_FAQ.pdf] The deadline to apply for answer script re-evaluation is 10 calendar days from the date of official result declaration, and the non-refundable re-evaluation fee is Rs. 500 per course.",
+        "total_client_time_s": 1.154,
+        "ttft_s": 0.037,
+        "load_duration_s": 0.008,
+        "prompt_eval_duration_s": 0.013,
+        "eval_duration_s": 1.115,
+        "prompt_eval_count": 307,
+        "eval_count": 93,
+        "generation_tps": 83.43,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13176.5,
+        "avg_gpu_util_pct": 93.0,
+        "test_id": "prompt_5_citation_requirement",
+        "test_category": "Question requiring citations to supplied evidence",
+        "description": "Explicit citation requirement citing exact source document brackets for every factual claim."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "I do not have sufficient information in the provided documents to answer this question.",
+        "total_client_time_s": 0.215,
+        "ttft_s": 0.031,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.015,
+        "eval_duration_s": 0.182,
+        "prompt_eval_count": 242,
+        "eval_count": 16,
+        "generation_tps": 87.75,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13177.5,
+        "avg_gpu_util_pct": 93.0,
+        "test_id": "prompt_6_unsupported_abstention",
+        "test_category": "Unsupported question with explicit abstention instruction",
+        "description": "Corpus contains only library access rules; user asks about admission fee refund timeline. Must abstain completely."
+      },
+      {
+        "model": "qwen2.5:3b-instruct-q4_K_M",
+        "text": "To determine the maximum number of credits a student can register for in a semester, we need to analyze the information provided in the two documents: \"Academic_Regulations_Archive_2022.pdf\" and \"Academic_Regulations_Amended_2024.pdf\".\n\nFrom \"Academic_Regulations_Archive_2022.pdf\":\n- The maximum permissible credit registration for a student in any regular semester is strictly capped at 24 credits.\n- No exceptions or overloads are permitted under any circumstances.\n\nFrom \"Academic_Regulations_Amended_2024.pdf\":\n- The normal semester registration limit is 26 credits.\n- Students with a CGPA of 8.50 or higher may apply for credit overload up to 28 credits with prior written approval from the Academic Dean.\n\nThere is a clear contradiction between the two documents. \"Academic_Regulations_Amended_2024.pdf\" states that students with a CGPA of 8.50 or higher can register for up to 28 credits, while \"Academic_Regulations_Archive_2022.pdf\" explicitly states that the maximum permissible credit registration is 24 credits, with no exceptions or overloads.\n\nGiven the context of the documents, the \"Academic_Regulations_Amended_2024.pdf\" document appears to be the most recent and relevant one, as it amends the regulations from the \"Academic_Regulations_Archive_2022.pdf\". Therefore, the maximum number of credits a student can register for in a semester, according to the most recent document, is 26 credits.",
+        "total_client_time_s": 4.15,
+        "ttft_s": 0.035,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.015,
+        "eval_duration_s": 4.113,
+        "prompt_eval_count": 227,
+        "eval_count": 341,
+        "generation_tps": 82.91,
+        "peak_vram_mib": 2331.0,
+        "peak_system_ram_mb": 13170.5,
+        "avg_gpu_util_pct": 92.8,
+        "test_id": "prompt_7_conflicting_evidence",
+        "test_category": "Conflicting evidence handling",
+        "description": "Two documents state conflicting rules for maximum credit registration limits. Model must detect and explain the conflict."
+      }
+    ],
+    "coexistence": {
+      "model_tag": "qwen2.5:3b-instruct-q4_K_M",
+      "llm_success": true,
+      "llm_error": null,
+      "llm_eval_count": 949,
+      "llm_tps": 82.17,
+      "pipeline_success": true,
+      "pipeline_error": null,
+      "pipeline_metrics": {
+        "embed_duration_s": 0.0283,
+        "chroma_duration_s": 0.0036,
+        "rerank_duration_s": 0.7523,
+        "total_pipeline_s": 0.7843,
+        "retrieved_count": 5,
+        "rerank_scores_sample": [
+          3.9446,
+          -7.1657,
+          -4.8327
+        ]
+      },
+      "ram_before_mb": 13116.6,
+      "ram_peak_mb": 13557.3,
+      "vram_before_mib": 2331.0,
+      "vram_peak_mib": 2331.0,
+      "vram_after_mib": 2331.0,
+      "active_models_in_ollama": [
+        {
+          "name": "qwen2.5:3b-instruct-q4_K_M",
+          "model": "qwen2.5:3b-instruct-q4_K_M",
+          "size": 2163568803,
+          "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "3.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-11-17T22:15:50.5896303+05:30",
+          "size_vram": 2163568803,
+          "context_length": 4096,
+          "runner": "llamacpp"
+        }
+      ]
+    }
+  },
+  "qwen3:4b-instruct-2507-q4_K_M": {
+    "name": "Qwen3-4B-Instruct-2507 (Q4_K_M)",
+    "role": "Primary Candidate",
+    "warmup": {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "text": "The course is CSE101.",
+      "total_client_time_s": 27.147,
+      "ttft_s": 26.982,
+      "load_duration_s": 17.879,
+      "prompt_eval_duration_s": 9.089,
+      "eval_duration_s": 0.163,
+      "prompt_eval_count": 76,
+      "eval_count": 10,
+      "generation_tps": 61.19,
+      "peak_vram_mib": 3293.0,
+      "peak_system_ram_mb": 13489.6,
+      "avg_gpu_util_pct": 3.4
+    },
+    "layer_placement": [
+      {
+        "name": "qwen3:4b-instruct-2507-q4_K_M",
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "size": 3180247121,
+        "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-17T22:16:17.8944939+05:30",
+        "size_vram": 3180247121,
+        "context_length": 4096,
+        "runner": "llamacpp"
+      }
+    ],
+    "tests": [
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "Prerequisite: Programming in C/C++ (CSE101 or CSE202) with minimum passing grade 'E'.  \nCredit count: 4 (L: 3, T: 1, P: 0)",
+        "total_client_time_s": 0.852,
+        "ttft_s": 0.064,
+        "load_duration_s": 0.007,
+        "prompt_eval_duration_s": 0.049,
+        "eval_duration_s": 0.787,
+        "prompt_eval_count": 202,
+        "eval_count": 51,
+        "generation_tps": 64.84,
+        "peak_vram_mib": 3293.0,
+        "peak_system_ram_mb": 13297.1,
+        "avg_gpu_util_pct": 98.9,
+        "test_id": "prompt_1_simple_factual",
+        "test_category": "Simple factual question",
+        "description": "Direct, single-hop factual query grounded in course syllabus details."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "**Attendance Requirement Policy \u2013 Explanation Based on Academic Regulations 2024**\n\n**1. Minimum Attendance Requirement**  \nEvery registered student must maintain a minimum attendance of **75%** in each registered course, **separately for theory and practical components**, to be eligible to appear in the End-Term Examination (ETE).\n\n---\n\n**2. What Happens if Attendance Falls Below 75%?**\n\n- **Attendance between 75% and 65% (inclusive):**  \n  If a student\u2019s attendance falls below 75% but remains at or above 65%, **condonation of up to 10%** may be granted **strictly on medical grounds** or for **authorized university representation** (e.g., sports, cultural events, academic conferences).  \n  - This condonation is **subject to approval** by the Competent Authority (e.g., Department Head or Proctor).  \n  - The final attendance must still be at or above 65% to avoid debarment.\n\n- **Attendance below 65% (or below 75% without authorized condonation):**  \n  Students whose final attendance is below %65% (or who fail to meet the 75% threshold without approved condonation) will be **officially debarred** from appearing in the End-Term Examination for that course.  \n  - A debarred student must **re-register for the course as a backlog** in a subsequent term.\n\n---\n\n**3. How a Student Can Apply for Medical Duty Leaves (Medical Condonation)**\n\nTo apply for medical condonation, a student must follow this process:\n\n- **Submit a Formal Application:**  \n  The student must submit a **Medical Regularization Application**.\n\n- **Attach Supporting Documents:**  \n  The application must be accompanied by:\n  - An **authentic medical certificate**.\n  - A **hospital discharge summary**.\n\n- **Submit to the Correct Authority:**  \n  The application must be submitted to the **Department Head or Proctor**.\n\n- **Submission Deadline:**  \n  The application must be submitted **within 3 working days** of the student\u2019s return to campus.\n\n- **Late Submissions:**  \n  Any submission made **after the 3-working-day deadline** will be **summarily rejected**.\n\n---\n\n**Summary of Key Points**  \n| Condition | Outcome |\n|--------|--------|\n| Attendance \u2265 75% | Eligible for ETE |\n| 65% \u2264 Attendance < 75% | Condonation up to 10% allowed (medical or authorized university reasons), subject to approval |\n| Attendance < 65% (or no condonation) | Debarred ('D' Grade); must re-register as backlog |\n\nThis policy ensures academic accountability while providing a structured pathway for students facing legitimate absences due to medical reasons.",
+        "total_client_time_s": 9.695,
+        "ttft_s": 0.115,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.091,
+        "eval_duration_s": 9.577,
+        "prompt_eval_count": 354,
+        "eval_count": 595,
+        "generation_tps": 62.13,
+        "peak_vram_mib": 3295.0,
+        "peak_system_ram_mb": 13339.5,
+        "avg_gpu_util_pct": 95.0,
+        "test_id": "prompt_2_multipara_university",
+        "test_category": "Multi-paragraph university-context question",
+        "description": "Multi-paragraph policy explanation spanning attendance thresholds, debarment consequences, and medical regularization."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "Grading Components for CSE306:  \n1. Continuous Assessment (CA): 25% (Best 3 out of 4 quizzes, programming assignments, and class participation)  \n2. Mid-Term Examination (MTE): 2-25% (Covers Units 1 to 3, duration 90 minutes)  \n3. End-Term Examination (ETE): 50% (Comprehensive, covers Units 1 to 6, duration 180 minutes)  \n\nOverall Passing Criteria:  \nA student must secure a minimum aggregate score of 40% across all continuous and term-end evaluation components combined to qualify for a passing grade ('E' or higher).  \n\nMinimum Required Score in the End-Term Examination Alone:  \nIt is not available in the provided documents to determine the minimum required score in the End-Term Examination alone, as the context does not specify the individual minimum score needed in the ETE component independently of the overall aggregate.",
+        "total_client_time_s": 3.369,
+        "ttft_s": 0.124,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.071,
+        "eval_duration_s": 3.243,
+        "prompt_eval_count": 293,
+        "eval_count": 204,
+        "generation_tps": 62.91,
+        "peak_vram_mib": 3297.0,
+        "peak_system_ram_mb": 13335.8,
+        "avg_gpu_util_pct": 72.9,
+        "test_id": "prompt_3_multiaspect_missing_detail",
+        "test_category": "Multi-aspect question with one missing detail",
+        "description": "Multi-aspect question where grading components and passing percentage are supplied, but minimum end-term score is missing."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "- Submit an overnight leave request on the University Management System (UMS) portal at least 24 hours prior to departure.  \n- Obtain digital approval from their registered parent or legal guardian via the automated IVR/SMS verification system.  \n- Scan their biometric student ID and display the approved digital gate-pass QR code at the campus main security gate before exiting.",
+        "total_client_time_s": 1.285,
+        "ttft_s": 0.105,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.064,
+        "eval_duration_s": 1.178,
+        "prompt_eval_count": 273,
+        "eval_count": 75,
+        "generation_tps": 63.67,
+        "peak_vram_mib": 3297.0,
+        "peak_system_ram_mb": 13412.0,
+        "avg_gpu_util_pct": 94.0,
+        "test_id": "prompt_4_strict_instruction_following",
+        "test_category": "Strict instruction-following question",
+        "description": "Strict structural constraint: exactly 3 bullet points, each starting with an action verb, no intro or outro text."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "No, a student cannot appear for an improvement exam if they received a 'C' grade, as students who obtained a grade 'C' or above are ineligible for grade improvement [Doc 1: Academic_Regulations_2024.pdf].  \n\nThe fee for answer script re-evaluation is Rs. 500 per course [Doc 2: Examination_Policy_FAQ.pdf].  \n\nThe deadline to apply for re-evaluation is within 10 calendar days from the date of official result declaration [Doc 2: Examination_Policy_FAQ.pdf].",
+        "total_client_time_s": 1.94,
+        "ttft_s": 0.107,
+        "load_duration_s": 0.005,
+        "prompt_eval_duration_s": 0.072,
+        "eval_duration_s": 1.831,
+        "prompt_eval_count": 307,
+        "eval_count": 116,
+        "generation_tps": 63.37,
+        "peak_vram_mib": 3297.0,
+        "peak_system_ram_mb": 13465.1,
+        "avg_gpu_util_pct": 94.8,
+        "test_id": "prompt_5_citation_requirement",
+        "test_category": "Question requiring citations to supplied evidence",
+        "description": "Explicit citation requirement citing exact source document brackets for every factual claim."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "I do not have sufficient information in the provided documents to answer this question.",
+        "total_client_time_s": 0.337,
+        "ttft_s": 0.095,
+        "load_duration_s": 0.004,
+        "prompt_eval_duration_s": 0.059,
+        "eval_duration_s": 0.24,
+        "prompt_eval_count": 242,
+        "eval_count": 16,
+        "generation_tps": 66.62,
+        "peak_vram_mib": 3297.0,
+        "peak_system_ram_mb": 13509.2,
+        "avg_gpu_util_pct": 95.0,
+        "test_id": "prompt_6_unsupported_abstention",
+        "test_category": "Unsupported question with explicit abstention instruction",
+        "description": "Corpus contains only library access rules; user asks about admission fee refund timeline. Must abstain completely."
+      },
+      {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "text": "The maximum number of credits a student can register for in a semester is **28 credits**, under specific conditions.\n\nExplanation:\n\n- The original clause (from *Academic_Regulations_Archive_2022.pdf*) states that the maximum permissible credit registration is strictly capped at **24 credits**, with no exceptions or overloads permitted.\n- The amended clause (from *Academic_Regulations_Amended_2024.pdf*) updates this to a normal semester registration limit of **26 credits**.\n- Additionally, it allows students with a CGPA of **8.50 or higher** to apply for a credit overload up to **28 credits**, provided they obtain prior written approval from the Academic Dean.\n\nTherefore, there is a **discrepancy** between the two documents:\n\n- The 2022 version sets a strict cap of 24 credits with no exceptions.\n- The 2024 amendment increases the limit to 26 credits for normal registration and allows up to 28 credits for eligible students.\n\nThis indicates a **conflict** in the regulations: the older version prohibits overloads, while the newer version permits overloads under specific conditions.\n\nResolution: Since the 2024 amendment is a revision of the original regulations, it supersedes the 2022 version. Thus, the current maximum number of credits a student can register for in a semester is **28 credits**, provided the student has a CGPA of 8.50 or higher and obtains prior written approval from the Academic Dean.\n\nFinal Answer: **28 credits** (for eligible students under the amended regulations).",
+        "total_client_time_s": 5.474,
+        "ttft_s": 0.086,
+        "load_duration_s": 0.005,
+        "prompt_eval_duration_s": 0.056,
+        "eval_duration_s": 5.386,
+        "prompt_eval_count": 227,
+        "eval_count": 340,
+        "generation_tps": 63.13,
+        "peak_vram_mib": 3297.0,
+        "peak_system_ram_mb": 13554.2,
+        "avg_gpu_util_pct": 94.6,
+        "test_id": "prompt_7_conflicting_evidence",
+        "test_category": "Conflicting evidence handling",
+        "description": "Two documents state conflicting rules for maximum credit registration limits. Model must detect and explain the conflict."
+      }
+    ],
+    "coexistence": {
+      "model_tag": "qwen3:4b-instruct-2507-q4_K_M",
+      "llm_success": true,
+      "llm_error": null,
+      "llm_eval_count": 503,
+      "llm_tps": 62.82,
+      "pipeline_success": true,
+      "pipeline_error": null,
+      "pipeline_metrics": {
+        "embed_duration_s": 0.0095,
+        "chroma_duration_s": 0.0024,
+        "rerank_duration_s": 0.6659,
+        "total_pipeline_s": 0.6779,
+        "retrieved_count": 5,
+        "rerank_scores_sample": [
+          3.9446,
+          -7.1657,
+          -4.8327
+        ]
+      },
+      "ram_before_mb": 13542.4,
+      "ram_peak_mb": 13949.3,
+      "vram_before_mib": 3297.0,
+      "vram_peak_mib": 3297.0,
+      "vram_after_mib": 3290.0,
+      "active_models_in_ollama": [
+        {
+          "name": "qwen3:4b-instruct-2507-q4_K_M",
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "size": 3180247121,
+          "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "4.0B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-11-17T22:16:49.7186294+05:30",
+          "size_vram": 3180247121,
+          "context_length": 4096,
+          "runner": "llamacpp"
+        }
+      ]
+    }
+  }
+}

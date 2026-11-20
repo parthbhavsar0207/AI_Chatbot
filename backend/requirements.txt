@@ -1,0 +1,32 @@
+# Core API Framework
+fastapi>=0.110.0,<1.0.0
+uvicorn>=0.28.0,<1.0.0
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.2.0,<3.0.0
+
+# Document Loaders & Processing
+pypdf>=4.1.0
+python-docx>=1.1.0
+
+# Embeddings & Numerical Processing
+fastembed>=0.9.0,<1.0.0
+# Constrain NumPy to <2.0.0 to prevent Windows Application Control / SAC DLL blocking on Windows 11
+numpy>=1.26.0,<2.0.0
+# Note: onnxruntime is installed transitively by fastembed
+
+# Vector Database
+# ChromaDB 1.x uses native Rust vector indexing without the legacy chroma-hnswlib dependency,
+# fully compatible with Python 3.12 and Windows Application Control / SAC.
+chromadb==1.5.9
+
+# Cross-Encoder Reranking (ONNX Runtime CPU)
+# tokenizers, huggingface-hub, and onnxruntime execute local MiniLM cross-encoder
+huggingface-hub>=0.20.0
+tokenizers>=0.19.0
+
+# Utilities & Environment
+python-dotenv>=1.0.1
+
+# Testing & Development
+pytest>=8.0.0
+httpx>=0.27.0
